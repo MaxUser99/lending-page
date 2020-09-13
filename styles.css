@@ -522,7 +522,7 @@ footer .logo-wrapper {
     display: flex;
     align-items: center;
 }
-footer .logo-wrapper .img {
+footer .logo-wrapper img {
     margin-bottom: 2px;
     margin-right: 2px;
 }
