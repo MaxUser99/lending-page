@@ -1,0 +1,308 @@
+body {
+    background-color: #F4F4FF;
+    overflow-x: hidden;
+}
+
+.section-main {
+    display: flex;
+    flex-direction: column;
+    height: 86.3vh;
+    background-color: #93a5ff;
+}
+.section-main header {
+    height: 11.4%;
+    display: flex;
+    align-items: center;
+}
+.section-main header .logo-wrapper {
+    width: 100%;
+}
+.section-main header nav {
+    width: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-main header nav a{
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.section-main header .lang-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-main header .lang-wrapper .lang-button {
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    height: 32px;
+    width: 32px;
+    margin: 0 5px;
+    background-color: #c5cdf7;
+    color: #8798e9;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.section-main header .lang-wrapper .lang-button.active {
+    background-color: #304ccf;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    margin: 10% 14.5%;
+}
+main .jumbotron {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main .jumbotron h1 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+}
+main .jumbotron p {
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 1px solid #fff;
+}
+main .jumbotron button {
+    margin-top: 60px;
+    margin-right: auto;
+    height: 48px;
+    width: 184px;
+    color: #fff;
+    background-color: #25dc89;
+    border: none;
+    border-radius: 8px;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 10px;
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+main .image-wrapper {
+    width: 100%;
+}
+
+.section-about {
+    height: 75vh;
+    display: flex;
+    background-color: #eeeeff;
+    padding: 5% 7.3%;
+}
+.section-about .image-wrapper {
+    width: 100%;
+}
+.section-about .about {
+    width: 100%;
+}
+.section-about .about h2 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+}
+.section-about .about .highlight {
+    color: #304ccf;
+}
+.section-about .about p {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 36px;
+    color: #000000;
+}
+.section-about .about p:first-of-type {
+    margin-top: 20px;
+}
+.section-about .about p:not(:first-of-type) {
+    margin-top: 50px;
+}
+
+.section-features {
+    margin: 5% 7.3%;
+    padding: 5% 6.3%;
+    background-color: #eeeeff;
+    display: flex;
+    flex-direction: column;
+}
+.section-features h2 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    color: #000000;
+}
+.section-features .features-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.feature-tile {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddddf8;
+    border-radius: 4px;
+    padding: 48px 45px 66px;
+    width: 324px;
+}
+.feature-tile:not(:last-child) {
+    margin-right: 10px;
+}
+.feature-tile.white {
+    background-color: #fff;
+}
+.feature-tile .logo {
+    width: 80px;
+}
+.feature-tile .title {
+    margin-top: 30px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+}
+.feature-tile .description {
+    margin-top: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.section-products {
+    margin: 5% 7.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-products .section-title {
+    margin-top: 60px;
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    color: #1F1F1F;
+}
+.section-products .section-subtitle {
+    margin-top: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+.section-products .list-title {
+    margin-top: 40px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}
+.section-products .content {
+    width: 100%;
+    display: flex;
+}
+.section-products .features-list {
+    margin-top: 5%;
+    width: 200%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-products .features-list .feature {
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.section-products .features-list .feature .title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+}
+.section-products .features-list .feature .description {
+    margin-top: 10px;
+}
+.section-products .images-column {
+    width: 100%;
+}
+
+.section-roadmap {
+    padding: 5% 7.3%;
+    background-color: #eeeeff;
+}
+.section-roadmap .roadmap-line-wrapper {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.section-roadmap .roadmap-line {
+    position: absolute;
+    width: 200vw;
+    transform: translateX(-10%);
+}
+.section-roadmap .roadmap-dots-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.section-roadmap .roadmap-top {
+    display: flex;
+}
+.section-roadmap .roadmap-top .roadmap-tile {
+    margin-left: auto;
+}
+.section-roadmap .roadmap-bottom {
+    display: flex;
+}
+.section-roadmap .roadmap-tile {
+    width: 20%;
+}
+
