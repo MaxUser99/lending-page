@@ -1,3 +1,6 @@
+document.getElementById('light-paper-button').addEventListener('click', (e) => {
+    window.open('/LIght paper.pdf');
+});
 document.querySelectorAll('a[href$="#light_paper"]')
 .forEach(element => {
     element.addEventListener('click', e => {
@@ -5,10 +8,10 @@ document.querySelectorAll('a[href$="#light_paper"]')
     }, false);
 });
 
-document.querySelectorAll('nav a, aside a').forEach(element => {
+document.querySelectorAll('header a, aside a').forEach(element => {
     element.addEventListener('click', e => {
         e.preventDefault();
-        const href = e.target.href.split('#');
+        const href = e.currentTarget.href.split('#');
         const itemId = href[href.length - 1];
         const element = itemId ? document.getElementById(itemId) : null;
         if (!element) return;
