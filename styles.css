@@ -381,7 +381,8 @@ main .image-wrapper img {
     justify-content: space-between;
 }
 .section-products .features-list .feature {
-    max-width: 300px;
+    min-width: 200px;
+    flex-basis: 40%;
     padding: 10px;
     margin-bottom: 60px;
 }
@@ -395,6 +396,7 @@ main .image-wrapper img {
 }
 .section-products .features-list .feature .description {
     margin-top: 10px;
+    max-width: 360px;
 }
 .section-products .images-column {
     width: 100%;
