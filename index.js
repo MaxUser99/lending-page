@@ -10,12 +10,13 @@ document.querySelectorAll('nav a, aside a').forEach(element => {
             top: element.offsetTop,
             behavior: 'smooth'
         });
-    });
+    }, false);
 });
 
-document.querySelector('.backface').addEventListener('click', hideMobileMenu);
-
-document.querySelector('.menu-button').addEventListener('click', showMobileMenu);
+document.querySelector('.backface').addEventListener('click', hideMobileMenu, false);
+document.querySelector('.backface').addEventListener('touchend', hideMobileMenu, false);
+document.querySelector('.menu-button').addEventListener('click', showMobileMenu, false);
+document.querySelector('.menu-button').addEventListener('touchend', showMobileMenu, false);
 
 function hideMobileMenu() {
     document.querySelector('.mobile-menu').classList.remove('open');
