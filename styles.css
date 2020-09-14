@@ -5,16 +5,18 @@ body {
     overflow-x: hidden;
     font-family: arial,helvetica,sans-serif
 }
+button:focus { outline: none; }
+.noscroll { overflow: hidden; }
 
 .section-main {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 86.3vh;
+    min-height: 86.3vh;
     background: linear-gradient(180deg, #ABB7F4 10.36%, #3E57D2 100%);;
 }
 .section-main header {
-    height: 11.4%;
+    height: 80px;
     display: flex;
     align-items: center;
 }
@@ -22,6 +24,13 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.section-main header .logo-wrapper .menu-button{
+    display: none;
+    margin-right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 .section-main header nav {
     width: 150%;
@@ -100,6 +109,49 @@ body {
     left: 0;
     bottom: 10px;
 }
+.backface {
+    position: absolute;
+    background-color: rgba(0,0 ,0,0.5);
+    z-index: 100;
+}
+.backface.show {
+    width: 100%;
+    height: 100%;
+}
+.mobile-menu {
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: 0.3s;
+}
+.mobile-menu.open {
+    transform: translateX(0);
+}
+.mobile-menu a{
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 25px;
+
+}
+@media screen and (max-width: 992px) {
+    .section-main header nav {
+        display: none;
+    }
+    .section-main header .logo-wrapper .menu-button {
+        display: inline;
+    }
+
+}
+  
 
 main {
     display: flex;
@@ -153,7 +205,19 @@ main .image-wrapper {
 main .image-wrapper img {
     width: 100%;
 }
-
+@media screen and (max-width: 992px) {
+    main {
+        flex-direction: column;
+    }
+    main .image-wrapper {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    main .jumbotron button {
+        width: 100%;
+    }
+}
 
 .section-about {
     /* height: 65vh; */
@@ -171,7 +235,6 @@ main .image-wrapper img {
 .section-about .image-wrapper img {
     width: 100%;
 }
-
 .section-about .about {
     width: 100%;
 }
@@ -199,6 +262,14 @@ main .image-wrapper img {
 .section-about .about p:not(:first-of-type) {
     margin-top: 50px;
 }
+@media screen and (max-width: 750px) {
+    .section-about {
+        flex-direction: column;
+    }
+    .section-about .image-wrapper {
+        margin-bottom: 20px;
+    }
+}
 
 .section-features {
     margin: 5% 7.3%;
@@ -217,8 +288,10 @@ main .image-wrapper img {
 }
 .section-features .features-list {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: space-around;
     margin-top: 2%;
+    flex-wrap: wrap;
 }
 .feature-tile {
     display: flex;
@@ -226,7 +299,9 @@ main .image-wrapper img {
     border: 1px solid #ddddf8;
     border-radius: 4px;
     padding: 48px 45px 66px;
-    width: 324px;
+    max-width: 324px;
+    min-width: 240px;
+    margin-bottom: 12px;
 }
 .feature-tile:not(:last-child) {
     margin-right: 10px;
@@ -324,11 +399,17 @@ main .image-wrapper img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5%;
+    min-width: 300px;
 }
 .section-products .images-column img {
     width: 60%;
 }
-
+@media screen and (max-width: 1140px) {
+    .section-products .images-column img {
+        width: 100%;
+    }
+}
 
 .section-roadmap {
     padding: 5% 7.3%;
@@ -416,7 +497,7 @@ main .image-wrapper img {
     line-height: 42px;
     color: #000000;
     margin-bottom: 10px;
-    width: 120%;
+    /* width: 120%; */
 }
 .section-social .section-description {
     font-family: Montserrat;
@@ -469,6 +550,13 @@ main .image-wrapper img {
 }
 .section-social .social-links button:not(:last-child) {
     margin-right: 33px;
+}
+@media screen and (max-width: 750px) {
+    .section-social { align-items: center; }
+    .section-social .wrapper { flex-wrap: wrap; }
+    .section-social .wrapper { margin-top: 10px }
+    .section-social .wrapper .content { margin-top: 10px }
+    .section-social .wrapper .action { margin-top: 10px }
 }
 
 footer {
@@ -526,4 +614,10 @@ footer .logo-wrapper img {
     margin-bottom: 2px;
     margin-right: 2px;
 }
+@media screen and (max-width: 750px) {
+    footer { flex-direction: column; }
+    footer .col { align-items: center; }
+    footer .col:not(:last-child) { margin-bottom: 12px; }
+}
+
 
