@@ -36,6 +36,7 @@ function hideMobileMenu() {
     document.querySelector('.mobile-menu').classList.remove('open');
     document.querySelector('.backface').classList.remove('show');
     document.body.style.overflowY = 'auto';
+
 }
 
 function showMobileMenu() {

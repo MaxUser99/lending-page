@@ -5,6 +5,7 @@ body {
     background-color: #F4F4FF;
     overflow-x: hidden;
     font-family: arial,helvetica,sans-serif;
+    scroll-behavior: smooth;
 }
 button:focus { outline: none; }
 
@@ -54,13 +55,16 @@ button:focus { outline: none; }
     text-decoration: none;
     font-family: Gilroy;
 }
-.section-main header .lang-wrapper {
+.lang-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.section-main header .lang-wrapper .lang-button {
+aside .lang-wrapper {
+    padding: 25px 0;
+}
+.lang-wrapper .lang-button {
     background-color: #fff;
     border-radius: 50%;
     border: none;
@@ -84,7 +88,7 @@ button:focus { outline: none; }
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-.section-main header .lang-wrapper .lang-button.active {
+.lang-wrapper .lang-button.active {
     background-color: #304ccf;
     color: #fff;
 }
@@ -130,17 +134,20 @@ button:focus { outline: none; }
     height: 200%;
 }
 .mobile-menu {
+    width: 142px;
+    right: -142px;
     z-index: 1000;
     height: 200%;
     position: fixed;
     display: flex;
     flex-direction: column;;
     background-color: #fff;
-    transform: translateX(-100%);
+    /* transform: translateX(-100%); */
     transition: 0.3s;
 }
 .mobile-menu.open {
-    transform: translateX(0);
+    right: 0;
+    /* transform: translateX(0); */
 }
 .mobile-menu a{
     font-size: 12px;
