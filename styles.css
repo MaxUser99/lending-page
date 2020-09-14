@@ -378,8 +378,8 @@ main .image-wrapper img {
 
 }
 .section-products .content .dot {
-    width: 20px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     border-radius: 50px;
     background-color: #304CCF;
     opacity: 0.2;
