@@ -1,11 +1,18 @@
+document.querySelectorAll('a[href$="#light_paper"]')
+.forEach(element => {
+    element.addEventListener('click', e => {
+        window.open('/LIght paper.pdf');
+    }, false);
+});
+
 document.querySelectorAll('nav a, aside a').forEach(element => {
     element.addEventListener('click', e => {
         e.preventDefault();
         const href = e.target.href.split('#');
         const itemId = href[href.length - 1];
-        if (!itemId) return;
+        const element = itemId ? document.getElementById(itemId) : null;
+        if (!element) return;
         hideMobileMenu();
-        const element = document.getElementById(itemId);
         element.scrollIntoView({ behavior: 'smooth' });
     }, false);
 });

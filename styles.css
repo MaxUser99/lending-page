@@ -581,19 +581,33 @@ footer .logo {
 }
 footer .col {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     min-height: 140px;
 }
+footer .col h4 {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
 footer .col .text:first-of-type {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 footer .col .text {
-    margin-top: 12px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 48px;
+    color: #FFFFFF;
 }
 footer .social-links {
     margin-top: auto;
+    flex-wrap: nowrap;
+    display: flex;
 }
 footer .social-links button {
     border: none;
@@ -602,10 +616,10 @@ footer .social-links button {
     cursor: pointer;
 }
 footer .social-links button:not(:last-child) {
-    margin-right: 33px;
+    margin-right: 5%;
 }
 footer .copy-right {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 footer .logo-text {
     margin-right: -5px;
@@ -622,6 +636,8 @@ footer .logo-wrapper img {
     footer { flex-direction: column; }
     footer .col { align-items: center; }
     footer .col:not(:last-child) { margin-bottom: 12px; }
+    footer .social-links { justify-content: center; }
+
 }
 
 
