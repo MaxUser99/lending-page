@@ -18,6 +18,7 @@ button:focus { outline: none; }
 }
 .section-main header {
     height: 80px;
+    z-index: 500;
     display: flex;
     align-items: center;
 }
@@ -120,9 +121,9 @@ button:focus { outline: none; }
     height: 100%;
 }
 .mobile-menu {
+    z-index: 1000;
     height: 100%;
     position: absolute;
-    z-index: 100;
     display: flex;
     flex-direction: column;;
     background-color: #fff;
