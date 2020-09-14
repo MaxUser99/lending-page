@@ -6,10 +6,7 @@ document.querySelectorAll('nav a, aside a').forEach(element => {
         if (!itemId) return;
         hideMobileMenu();
         const element = document.getElementById(itemId);
-        window.scrollTo({
-            top: element.offsetTop,
-            behavior: 'smooth'
-        });
+        element.scrollIntoView({ behavior: 'smooth' });
     }, false);
 });
 
