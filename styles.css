@@ -197,16 +197,20 @@ main .jumbotron button {
     border: none;
     border-radius: 8px;
     
-    font-family: Montserrat;
+    font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 12px;
     /* identical to box height, or 100% */
     
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
+    
+    /* white */
+    
+    color: #FFFFFF;
 }
 main .image-wrapper {
     margin-left: 80px;
@@ -404,6 +408,12 @@ main .image-wrapper img {
 .section-products .features-list .feature .description {
     margin-top: 10px;
     max-width: 360px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F1F1F;
 }
 .section-products .images-column {
     width: 100%;
