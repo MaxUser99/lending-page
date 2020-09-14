@@ -1,3 +1,4 @@
+@font-face { font-family: Gilroy-ExtraBold; src: url('assets/fonts/Gilroy-ExtraBold.ttf'); }
 @font-face { font-family: Gilroy; src: url('assets/fonts/Gilroy-Regular.ttf'); }
 @font-face { font-family: Montserrat; src: url('assets/fonts/Montserrat-Regular.ttf'); }
 html { overflow-x: hidden; }
@@ -67,7 +68,10 @@ button:focus { outline: none; }
     margin: 0 5px;
     background-color: #c5cdf7;
     color: #8798e9;
-    
+    white-space: nowrap;
+    transition: 0.3s;
+    cursor: pointer;
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -169,7 +173,8 @@ main .jumbotron {
     flex-direction: column;
 }
 main .jumbotron h1 {
-    font-family: Gilroy;
+    /* font-family: Gilroy; */
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -255,7 +260,7 @@ main .image-wrapper img {
     width: 100%;
 }
 .section-about .about h2 {
-    font-family: Gilroy;
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -295,7 +300,7 @@ main .image-wrapper img {
     flex-direction: column;
 }
 .section-features h2 {
-    font-family: Gilroy;
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -319,12 +324,10 @@ main .image-wrapper img {
 .feature-tile:not(:last-child) {
     margin-right: 10px;
 }
-.feature-tile.white {
-    background-color: #fff;
-}
-.feature-tile .logo {
-    width: 80px;
-}
+.feature-tile .logo { height: 64px; }
+.feature-tile .logo.logo-1 { width: 80px;}
+.feature-tile .logo.logo-2 { width: 104px; }
+.feature-tile .logo.logo-3 { width: 90px; }
 .feature-tile .title {
     margin-top: 30px;
     font-family: Gilroy;
@@ -336,22 +339,10 @@ main .image-wrapper img {
 }
 .feature-tile .description {
     margin-top: 10px;
-    /* font-family: Gilroy;
+    font-family: Gilroy;
     font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    color: #000000; */
-
-    font-family: Gilroy;
-font-style: normal;
-/* font-weight: bold; */
-font-size: 16px;
-line-height: 26px;
-/* or 162% */
-
-
-color: #3E57D2;
 }
 
 .section-products {
@@ -363,7 +354,7 @@ color: #3E57D2;
 .section-products .section-title {
     margin-top: 60px;
 
-    font-family: Gilroy;
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -382,7 +373,7 @@ color: #3E57D2;
 }
 .section-products .list-title {
     margin-top: 40px;
-    font-family: Gilroy;
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -459,7 +450,7 @@ color: #3E57D2;
     background-color: #eeeeff;
 }
 .section-roadmap .section-title {
-    font-family: Gilroy;
+    font-family: Gilroy-ExtarBold;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -533,7 +524,7 @@ color: #3E57D2;
     flex-direction: column;
 }
 .section-social .section-title {
-    font-family: Gilroy;
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
@@ -592,7 +583,9 @@ color: #3E57D2;
 }
 
 footer {
-    padding: 5% 7.3%;
+    height: 80px;
+    padding: 0 7.3%;
+    align-items: center;
     background-color: #1f1f1f;
     color: white;
     display: flex;

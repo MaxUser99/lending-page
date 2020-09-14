@@ -1,6 +1,15 @@
+document.querySelectorAll('button.lang-button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        if (e.currentTarget.classList.contains('active')) return;
+        document.querySelector('button.lang-button.active').classList.remove('active');
+        e.currentTarget.classList.add('active');
+    }, false);
+})
+
 document.getElementById('light-paper-button').addEventListener('click', (e) => {
     window.open('/LIght paper.pdf');
 });
+
 document.querySelectorAll('a[href$="#light_paper"]')
 .forEach(element => {
     element.addEventListener('click', e => {
@@ -16,7 +25,7 @@ document.querySelectorAll('header a, aside a').forEach(element => {
         const element = itemId ? document.getElementById(itemId) : null;
         if (!element) return;
         hideMobileMenu();
-        element.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({ behavior: 'smooth', top: element.offsetTop - 80});
     }, false);
 });
 
