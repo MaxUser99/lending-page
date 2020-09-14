@@ -1,14 +1,12 @@
 @font-face { font-family: Gilroy-ExtraBold; src: url('assets/fonts/Gilroy-ExtraBold.ttf'); }
 @font-face { font-family: Gilroy; src: url('assets/fonts/Gilroy-Regular.ttf'); }
 
-html { overflow-x: hidden; }
 body {
     background-color: #F4F4FF;
     overflow-x: hidden;
-    font-family: arial,helvetica,sans-serif
+    font-family: arial,helvetica,sans-serif;
 }
 button:focus { outline: none; }
-.noscroll { overflow: hidden; }
 
 .section-main {
     display: flex;
@@ -156,13 +154,16 @@ button:focus { outline: none; }
 
 }
 @media screen and (max-width: 992px) {
-    .section-main header nav {
+    .section-main header nav, .section-main header .lang-wrapper {
         display: none;
     }
     .section-main header .logo-wrapper .menu-button {
+        order: 1;
         display: inline;
     }
-
+    .section-main header .logo-wrapper {
+        justify-content: space-around;
+    }
 }
   
 
@@ -235,6 +236,10 @@ main .image-wrapper img {
     }
     main .image-wrapper {
         margin: 0;
+        order: 0;
+    }
+    main .jumbotron {
+        order: 1;
     }
 }
 @media screen and (max-width: 600px) {
@@ -293,6 +298,8 @@ main .image-wrapper img {
     }
     .section-about .image-wrapper {
         margin-bottom: 20px;
+        padding: 0;
+        justify-content: center;
     }
 }
 
@@ -375,7 +382,7 @@ main .image-wrapper img {
     font-weight: normal;
     font-size: 16px;
     line-height: 16px;
-    color: #000000;
+    color: #304CCF;
 }
 .section-products .list-title {
     margin-top: 40px;
@@ -441,11 +448,40 @@ main .image-wrapper img {
     }
     .section-features .features-list .feature-tile {
         max-width: none;
+        margin: 0 0 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section-products {
+        align-items: center;
+    }
+    .section-products .images-column {
+        order: 0;
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+    .section-products .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-products .feature-col {
+        order: 2;
+    }
+    .section-products .images-column img {
+        position: absolute;
+        background-color: #F4F4FF;
+        max-height: 220px;
+    }
+    .section-products .title-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .section-roadmap {
-    padding: 5% 7.3%;
+    padding: 5% 13.6%;
     background-color: #eeeeff;
 }
 .section-roadmap .section-title {
@@ -456,16 +492,6 @@ main .image-wrapper img {
     line-height: 42px;
     color: #000000;
     margin-bottom: 40px;
-}
-.section-roadmap .roadmap-line-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-.section-roadmap .roadmap-line {
-    position: absolute;
-    width: 200vw;
-    transform: translateX(-10%);
 }
 .section-roadmap .roadmap-tile {
     width: 20%;
@@ -483,16 +509,51 @@ main .image-wrapper img {
 .section-roadmap .roadmap-tile .roadmap-tile__features {
     font-family: Gilroy;
     font-style: normal;
-    /* font-weight: bold; */
     font-size: 16px;
     line-height: 26px;
-}
-.section-roadmap .roadmap-top {
-    display: flex;
 }
 .section-roadmap .roadmap-ellips {
     position: absolute;
     z-index: 500;
+}
+.section-roadmap .roadmap-vertical {
+    display: none;
+    position: relative;
+    overflow-y: hidden;
+    padding-left: 10px;
+}
+.section-roadmap .roadmap-vertical .roadmap-line {
+    height: 100%;
+    transform: rotate(90deg);
+    top: -100%;
+    
+    transform-origin: left;
+    padding-left: 20px
+}
+.section-roadmap .roadmap-vertical .roadmap-tile {
+    padding-left: 20px;
+    margin-top: 20px;
+    width: auto;
+}
+.section-roadmap .roadmap-vertical .roadmap-tile .roadmap-ellips {
+    top: 0;
+    left: -6px;
+}
+
+.section-roadmap .roadmap-horizontal { }
+.section-roadmap .roadmap-horizontal .roadmap-line-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.section-roadmap .roadmap-vertical .roadmap-line-wrapper {}
+.section-roadmap .roadmap-line {
+    position: absolute;
+    width: 200vw;
+    transform: translateX(-10%);
+}
+.section-roadmap .roadmap-top {
+    display: flex;
 }
 .section-roadmap .roadmap-top .roadmap-ellips {
     bottom: -6px;
@@ -518,6 +579,15 @@ main .image-wrapper img {
 }
 .section-roadmap .roadmap-bottom .roadmap-tile:not(:first-of-type) {
     margin-right: auto;
+}
+@media screen and (max-width: 800px) {
+    .section-roadmap .roadmap-vertical {
+        display: block;
+    }
+    .section-roadmap .roadmap-horizontal {
+        display: none;
+    }
+
 }
 
 .section-social {
