@@ -381,33 +381,29 @@ main .image-wrapper img {
     line-height: 16px;
     text-align: center;
     color: #000000;
+    margin-bottom: 5%;
 }
 .section-products .content {
     width: 100%;
     display: flex;
+    justify-content: center;
 }
-.section-products .features-list {
-    margin-top: 5%;
-    width: 200%;
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
+.section-products .feature-col {
+    margin: 0 auto;
 }
-.section-products .features-list .feature {
-    /* min-width: 200px; */
-    /* flex-basis: 40%; */
+.section-products .feature {
     padding: 10px;
     margin-bottom: 60px;
 }
-.section-products .features-list .feature .title {
+.section-products .feature .title {
     font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 16px;
-    color: #000000;
+    color: #304CCF;
 }
-.section-products .features-list .feature .description {
+.section-products .feature .description {
     margin-top: 10px;
     max-width: 360px;
     font-family: Gilroy;
@@ -418,15 +414,14 @@ main .image-wrapper img {
     color: #1F1F1F;
 }
 .section-products .images-column {
-    width: 100%;
+    margin-right: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
     min-width: 300px;
 }
 .section-products .images-column img {
-    width: 60%;
+    width: 85%;
 }
 @media screen and (max-width: 1140px) {
     .section-products .images-column img {
@@ -476,7 +471,7 @@ main .image-wrapper img {
 .section-roadmap .roadmap-tile .roadmap-tile__title {
     margin-bottom: 10px;
     color: #3E57D2;
-    font-family: Gilroy;
+    font-family: Gilroy-ExtraBold;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
