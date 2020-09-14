@@ -336,12 +336,22 @@ main .image-wrapper img {
 }
 .feature-tile .description {
     margin-top: 10px;
-    font-family: Gilroy;
+    /* font-family: Gilroy;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
-    color: #000000;
+    color: #000000; */
+
+    font-family: Gilroy;
+font-style: normal;
+/* font-weight: bold; */
+font-size: 16px;
+line-height: 26px;
+/* or 162% */
+
+
+color: #3E57D2;
 }
 
 .section-products {
@@ -478,7 +488,7 @@ main .image-wrapper img {
 .section-roadmap .roadmap-tile .roadmap-tile__features {
     font-family: Gilroy;
     font-style: normal;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 16px;
     line-height: 26px;
 }
