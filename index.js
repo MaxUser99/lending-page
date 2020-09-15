@@ -7,13 +7,13 @@ document.querySelectorAll('button.lang-button').forEach(button => {
 })
 
 document.getElementById('light-paper-button').addEventListener('click', (e) => {
-    window.open('/LIght paper.pdf');
+    window.open('/LightPaper.pdf.pdf');
 });
 
 document.querySelectorAll('a[href$="#light_paper"]')
 .forEach(element => {
     element.addEventListener('click', e => {
-        window.open('/LIght paper.pdf');
+        window.open('/LightPaper.pdf');
     }, false);
 });
 
