@@ -623,6 +623,53 @@ main .image-wrapper img {
 
 }
 
+.section-distribution {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 13.6%;
+    background-color: #eeeeff;
+}
+.section-distribution .section-title {
+    font-family: Gilroy-ExtraBold;
+    font-size: 32px;
+    line-height: 42px;
+}
+.section-distribution .distribution-table {
+    width: 100%;
+    text-align: left;
+    margin-top: 70px;
+}
+.section-distribution .distribution-table tr {
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 22px;;
+    height: 64px;
+    border-bottom: 1px solid #aaa;
+}
+.section-distribution .distribution-table tr:first-child {
+    font-family: Gilroy-ExtraBold;
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+.section-distribution .distribution-table tr:last-child {
+    border-bottom: none;
+    font-family: Gilroy-ExtraBold;
+    height: 32px;
+}
+.section-distribution .distribution-table th {
+    width: 20%;
+    vertical-align: middle;
+}
+.section-distribution .distribution-table th:last-child {
+    width: 40%;
+}
+.section-distribution .distribution-table td {
+    vertical-align: middle;
+}
+
 .section-social {
     margin: 5% 7.3%;
     padding: 5% 7.3%;

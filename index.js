@@ -57,7 +57,6 @@ images.forEach(element => {
     dot.addEventListener('click', dotClickHandler);
     if (!dots.length) dot.classList.add(ACTIVE_CLASS);
     else element.classList.add(HIDDEN_CLASS);
-    console.log(element, dots.length)
     dots.push(dot);
 });
 const dotsContainer = document.createElement('div');
