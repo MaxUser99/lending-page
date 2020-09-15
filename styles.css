@@ -634,6 +634,16 @@ main .image-wrapper img {
     font-size: 32px;
     line-height: 42px;
 }
+.section-distribution .chart-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.section-distribution .chart-wrapper .chart-legend {
+    position: absolute;
+    top: -26px;
+}
 .section-distribution .distribution-table {
     width: 100%;
     text-align: left;
