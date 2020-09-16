@@ -516,6 +516,7 @@ main .image-wrapper img {
 .section-roadmap {
     padding: 5% 13.6%;
     background-color: #eeeeff;
+    overflow: hidden;
 }
 .section-roadmap .section-title {
     font-family: Gilroy-ExtraBold;
