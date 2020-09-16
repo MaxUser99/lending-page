@@ -694,12 +694,17 @@ main .image-wrapper img {
     width: 30%;
     max-width: 400px;
     background: #e0e0f0;
-    color: #c1c1ce;
     border: none;
     padding: 11px 20px;
     box-sizing: border-box;
     border-radius: 4px;
-    /* margin-left: auto; */
+
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
 }
 .section-social .title-wrapper {
     display: flex;
