@@ -1,6 +1,9 @@
 @font-face { font-family: Gilroy-ExtraBold; src: url('assets/fonts/Gilroy-ExtraBold.ttf'); }
 @font-face { font-family: Gilroy; src: url('assets/fonts/Gilroy-Regular.ttf'); }
 
+html {
+    overflow-x: hidden;
+}
 body {
     background-color: #F4F4FF;
     overflow-x: hidden;
