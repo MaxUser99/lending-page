@@ -802,26 +802,56 @@ main .image-wrapper img {
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
-    /* margin-left: auto; */
 }
-.section-social .action {
-    /* margin-left: auto; */
-    height: 48px;
-    width: 184px;
-    color: #fff;
-    background-color: #25dc89;
-    border: none;
-    border-radius: 8px;
-    
+.section-social .action {   
     font-family: Gilroy;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 12px;
-    
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
+    position: relative;
+
+    height: 48px;
+    width: 184px;
+    cursor: pointer;
+
+    color: #fff;
+    background-color: #25dc89;
+    border: none;
+    border-radius: 8px;
+
+    overflow: hidden;
+    box-shadow: 0 2px 4px darkgray;
+    transition: all 0.2s ease-in;
+}
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    background: radial-gradient(circle closest-side,  white, #88fdc8);
+    width: 1px;
+    height: 1px;
+    z-index: 3;
+    animation: 0.5s both ease-in ripple;
+    background-color: transparent;
+}
+@keyframes ripple {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    65% {
+        transform: scale(450, 450);
+        opacity: 0.55;
+    }
+    100% {
+        transform: scale(700, 700);
+        opacity: 0;
+        background-color: transparent;
+    }
 }
 @media screen and (max-width: 1140px) {
     .section-social {

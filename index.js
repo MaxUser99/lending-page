@@ -1,3 +1,17 @@
+document.querySelector('#subscription-form button[type=submit]').addEventListener('click', e => {
+    const circle = document.createElement('div');
+    const x = e.layerX;
+    const y = e.layerY;
+    circle.classList.add('circle');
+    circle.style.left = `${x}px`;
+    circle.style.top = `${y}px`;
+    e.currentTarget.appendChild(circle);
+    setTimeout(
+        () => { circle.remove(); }, 
+        1000
+    );
+});
+
 document.getElementById('subscription-form').addEventListener('submit', e => {
     e.preventDefault();
     const url = 'https://script.google.com/macros/s/AKfycbwC7TN3H4LULiJjnBDEWYu4S2JFwKOunLsDHPqMnlG1jfKskfM9/exec';
