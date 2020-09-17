@@ -17,7 +17,7 @@ document.querySelectorAll('button.lang-button').forEach(button => {
 })
 
 document.getElementById('light-paper-button').addEventListener('click', (e) => {
-    window.open('/LightPaper.pdf.pdf');
+    window.open('/LightPaper.pdf');
 });
 
 document.querySelectorAll('a[href$="#light_paper"]')
