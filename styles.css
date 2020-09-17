@@ -2,11 +2,11 @@
 @font-face { font-family: Gilroy; src: url('assets/fonts/Gilroy-Regular.ttf'); }
 
 html {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body {
     background-color: #F4F4FF;
-    overflow-x: hidden;
+    /* overflow: hidden; */
     font-family: arial,helvetica,sans-serif;
     scroll-behavior: smooth;
 }
@@ -687,6 +687,7 @@ main .image-wrapper img {
 
 .section-distribution {
     display: flex;
+    overflow: hidden;
     flex-direction: column;
     padding: 5% 13.6%;
     background-color: #eeeeff;

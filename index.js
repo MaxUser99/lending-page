@@ -59,14 +59,11 @@ document.querySelector('.menu-button').addEventListener('click', showMobileMenu,
 function hideMobileMenu() {
     document.querySelector('.mobile-menu').classList.remove('open');
     document.querySelector('.backface').classList.remove('show');
-    document.body.style.overflowY = 'auto';
-
 }
 
 function showMobileMenu() {
     document.querySelector('.backface').classList.add('show');
     document.querySelector('.mobile-menu').classList.add('open');
-    document.body.style.overflowY = 'hidden';
 }
 
 
