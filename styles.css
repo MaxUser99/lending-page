@@ -1,14 +1,11 @@
 @font-face { font-family: Gilroy-ExtraBold; src: url('assets/fonts/Gilroy-ExtraBold.ttf'); }
 @font-face { font-family: Gilroy; src: url('assets/fonts/Gilroy-Regular.ttf'); }
 
-html {
-    /* overflow-x: hidden; */
-}
 body {
     background-color: #F4F4FF;
-    /* overflow: hidden; */
     font-family: arial,helvetica,sans-serif;
     scroll-behavior: smooth;
+    min-width: 375px;
 }
 button:focus { outline: none; }
 
@@ -18,7 +15,6 @@ button:focus { outline: none; }
     position: relative;
     min-height: 86.3vh;
     background: linear-gradient(360deg, #F4F4FF 2.2%, #3E57D2 105.71%);
-    /* background: linear-gradient(180deg, #ABB7F4 10.36%, #3E57D2 100%);; */
 }
 .section-main header {
     height: 80px;
@@ -28,7 +24,6 @@ button:focus { outline: none; }
     position: fixed;
     width: 100%;
     background: linear-gradient(360deg, #586ed8 2.2%, #3E57D2 105.71%);
-    /* background: linear-gradient(180deg, #ABB7F4 10.36%, #abb7f4 100%) */
 }
 .section-main header .logo-wrapper {
     width: 100%;
