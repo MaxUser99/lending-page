@@ -203,6 +203,9 @@ main .jumbotron p {
     color: #FFFFFF;
 }
 main .jumbotron button {
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    box-shadow: 0 2px 4px darkgray;
     margin-top: 60px;
     margin-right: auto;
     height: 48px;
@@ -226,6 +229,9 @@ main .jumbotron button {
     /* white */
     
     color: #FFFFFF;
+}
+main .jumbotron button:hover {
+    background-color: #3ff3a1;
 }
 main .image-wrapper {
     margin-left: 80px;
@@ -733,6 +739,11 @@ main .image-wrapper img {
 .section-distribution .distribution-table td {
     vertical-align: middle;
 }
+/* @media screen and (max-width: 995px) {
+    .section-distribution .chart-wrapper .chart-legend {
+        display: none;
+    }
+} */
 
 .section-social {
     margin: 5% 7.3%;
@@ -818,6 +829,9 @@ main .image-wrapper img {
     overflow: hidden;
     box-shadow: 0 2px 4px darkgray;
     transition: all 0.2s ease-in;
+}
+.section-social .action:hover {   
+    background-color: #3ff3a1;
 }
 .circle {
     position: absolute;
