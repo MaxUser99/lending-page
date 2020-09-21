@@ -14,12 +14,12 @@ document.querySelector('#subscription-form button[type=submit]').addEventListene
 
 document.getElementById('subscription-form').addEventListener('submit', e => {
     e.preventDefault();
-    // const url = 'https://script.google.com/macros/s/AKfycbwC7TN3H4LULiJjnBDEWYu4S2JFwKOunLsDHPqMnlG1jfKskfM9/exec';
-    // const email = document.querySelector('form#subscription-form input[type$="email"]').value;
-    // fetch(`${url}?email=${email}`, { method: "GET" })
-    //     .then(r => r.json())
-    //     .then(console.log)
-    //     .catch(console.error);
+    const url = 'https://script.google.com/macros/s/AKfycbwC7TN3H4LULiJjnBDEWYu4S2JFwKOunLsDHPqMnlG1jfKskfM9/exec';
+    const email = document.querySelector('form#subscription-form input[type$="email"]').value;
+    fetch(`${url}?email=${email}`, { method: "GET" })
+        .then(r => r.json())
+        .then(console.log)
+        .catch(console.error);
 }, false);
 
 document.querySelectorAll('button.lang-button').forEach(button => {
