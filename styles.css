@@ -574,6 +574,9 @@ main .image-wrapper img {
     background-color: #eeeeff;
     overflow: hidden;
 }
+.section-roadmap .roadmap-line {
+    position: absolute;
+}
 .section-roadmap .section-title {
     font-family: Gilroy-ExtraBold;
     font-style: normal;
@@ -613,12 +616,8 @@ main .image-wrapper img {
     padding-left: 10px;
 }
 .section-roadmap .roadmap-vertical .roadmap-line {
-    height: 100%;
     transform: rotate(90deg);
-    top: -100%;
-    
     transform-origin: left;
-    padding-left: 20px
 }
 .section-roadmap .roadmap-vertical .roadmap-tile {
     padding-left: 20px;
@@ -630,17 +629,14 @@ main .image-wrapper img {
     left: -6px;
 }
 
-.section-roadmap .roadmap-horizontal { }
 .section-roadmap .roadmap-horizontal .roadmap-line-wrapper {
     position: relative;
     display: flex;
     align-items: center;
 }
-.section-roadmap .roadmap-vertical .roadmap-line-wrapper {}
-.section-roadmap .roadmap-line {
-    position: absolute;
+.section-roadmap .roadmap-horizontal .roadmap-line {
     width: 200vw;
-    transform: translateX(-10%);
+    left: -50%;
 }
 .section-roadmap .roadmap-top {
     display: flex;

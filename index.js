@@ -66,18 +66,17 @@ function showMobileMenu() {
     document.querySelector('.mobile-menu').classList.add('open');
 }
 
-
 const HIDDEN_CLASS = 'hidden';
 const ACTIVE_CLASS = 'active';
 const dots = [];
 const parentNode = document.querySelector('.section-products .images-column');
 const images = document.querySelectorAll('.section-products .images-column img');
-images.forEach(element => {
+images.forEach(image => {
     const dot = document.createElement('div');
     dot.classList.add('dot');
     dot.addEventListener('click', dotClickHandler);
     if (!dots.length) dot.classList.add(ACTIVE_CLASS);
-    else element.classList.add(HIDDEN_CLASS);
+    else image.classList.add(HIDDEN_CLASS);
     dots.push(dot);
 });
 const dotsContainer = document.createElement('div');
